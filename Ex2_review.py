@@ -149,6 +149,7 @@ print("-------------------------------------------\n"
 # Convert it to an integer using int() and store it in a variable.
 #
 # Write your code below:
+number=int(input("Enter a number between 1 and 10\n"))
 
 
 
@@ -161,7 +162,9 @@ print("-------------------------------------------\n"
 # 3 x 2 = 6
 #
 # Write your code below:
-
+for i in range(1, 11):
+    print(f"{number} x {i} = {number*i}")
+    
 
 
 # Step 3:
@@ -172,8 +175,11 @@ print("-------------------------------------------\n"
 # Use .lower() to make sure input like "YES" or "Yes" works.
 #
 # Write your code below:
-
-
+usernumber = input("Do you want to try another number? Yes or No?").lower()
+while usernumber == "yes":
+    for i in range(1, 11):
+        print(f"{number} x {i} = {number*i}")
+    break
 
 # -------------------------------------------
 # SWAP COMPUTERS
