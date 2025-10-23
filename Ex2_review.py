@@ -55,6 +55,8 @@ print("-------------------------------------------\n"
 # Print: "Welcome, <name>!"
 #
 # Write your code below:
+userName = input("Enter your name\n").strip()
+print(f"Welcome,{userName}!")
 
 
 
@@ -66,8 +68,8 @@ print("-------------------------------------------\n"
 # Print: "You are <age> years old — great to have you here!"
 #
 # Write your code below:
-
-
+user_age = int(input("What is your age?\n"))
+print(f"You are {user_age} years old- great to have you here!")
 
 # -------------------------------------------
 # SWAP COMPUTERS
