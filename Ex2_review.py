@@ -175,11 +175,12 @@ for i in range(1, 11):
 # Use .lower() to make sure input like "YES" or "Yes" works.
 #
 # Write your code below:
-usernumber = input("Do you want to try another number? Yes or No?").lower()
-while usernumber == "yes":
+userAnswer = input("Do you want to try another number? Yes or No?").lower()
+while userAnswer == "yes":
+    userNumber = int(input("What number do you want to try?"))
     for i in range(1, 11):
-        print(f"{number} x {i} = {number*i}")
-    break
+        print(f"{userNumber} x {i} = {userNumber*i}")
+    userAnswer = input("Do you want to try another number? Yes or No?").lower()
 
 # -------------------------------------------
 # SWAP COMPUTERS
