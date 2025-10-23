@@ -55,6 +55,8 @@ print("-------------------------------------------\n"
 # Print: "Welcome, <name>!"
 #
 # Write your code below:
+userName = input("Enter your name\n").strip()
+print(f"Welcome,{userName}!")
 
 
 
@@ -66,8 +68,8 @@ print("-------------------------------------------\n"
 # Print: "You are <age> years old — great to have you here!"
 #
 # Write your code below:
-
-
+user_age = int(input("What is your age?\n"))
+print(f"You are {user_age} years old- great to have you here!")
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -100,8 +102,8 @@ print("-------------------------------------------\n"
 # Use .lower() on the input and store it in a variable called colour.
 #
 # Write your code below:
-
-
+colour = input("Please enter your favourite colour").lower()
+print(f"{colour} is your favourite colour")
 
 # Step 2:
 # -------------------------------------------
@@ -112,7 +114,12 @@ print("-------------------------------------------\n"
 # - Otherwise → "That's a unique colour!"
 #
 # Write your code below:
-
+if colour== "Blue":
+    print("Cool choice!")
+elif colour=="yellow":
+    print("Bright and happy!")
+else :
+    print("That is a unique colour!")
 
 
 # -------------------------------------------
@@ -142,6 +149,7 @@ print("-------------------------------------------\n"
 # Convert it to an integer using int() and store it in a variable.
 #
 # Write your code below:
+number=int(input("Enter a number between 1 and 10\n"))
 
 
 
@@ -154,7 +162,9 @@ print("-------------------------------------------\n"
 # 3 x 2 = 6
 #
 # Write your code below:
-
+for i in range(1, 11):
+    print(f"{number} x {i} = {number*i}")
+    
 
 
 # Step 3:
@@ -165,8 +175,12 @@ print("-------------------------------------------\n"
 # Use .lower() to make sure input like "YES" or "Yes" works.
 #
 # Write your code below:
-
-
+userAnswer = input("Do you want to try another number? Yes or No?").lower()
+while userAnswer == "yes":
+    userNumber = int(input("What number do you want to try?"))
+    for i in range(1, 11):
+        print(f"{userNumber} x {i} = {userNumber*i}")
+    userAnswer = input("Do you want to try another number? Yes or No?").lower()
 
 # -------------------------------------------
 # SWAP COMPUTERS
